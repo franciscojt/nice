@@ -1,0 +1,14 @@
+{
+  "name": "userv2",
+  "authors": [
+    "Francisco J Trujillo <francisco.jose1982@gmail.com>"
+  ],
+  "description": "user",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
+  }
+}

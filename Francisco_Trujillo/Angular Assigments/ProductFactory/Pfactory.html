@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="pFactory" lang="en">
+<head>
+
+<script src="../bower_components/angular/angular.js"></script>
+<script src="JSangular.js"
+type="text/javascript"></script>
+
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body ng-controller = "productController" class="row">
+	<h1>Products Controller</h1>
+	<form>
+		<label for="Name: ">Product Name: </label>
+		<input type="text" ng-model = "nProduct.name"/>
+		<label for="Last Name: ">Product Price: $ </label>
+		<input type="text" ng-model = "nProduct.price"/>
+		<button type="submit" value="add new food" ng-click="addProduct()"> Add Product</button>
+	</form>	
+	<table>
+		<thead>
+			<tr>
+				<th>Products</th>
+				<th>Price</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="product in products track by $index">
+				<td>{{product.name}}</td>
+				<td>{{product.price}}</td>
+				<td><button type="submit" value="add new Product" ng-click="delProduct($index)"> Delete Product</button></td>
+			</tr>
+		</tbody>
+	</table>
+
+</body>
+</html>
