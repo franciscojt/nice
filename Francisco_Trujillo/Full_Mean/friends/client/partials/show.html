@@ -1,0 +1,21 @@
+<div>
+	<br>
+		<h3 class="text-danger">Show a friend</h3>
+	<br>
+	<div class="form-horizontal">
+	   <div class="form-group">
+		   <label class="col-md-2 control-label">First Name: {{friend.fname}}</label>
+	   </div>
+	   <div class="form-group">
+		   <label class="col-md-2 control-label">Last Name: {{friend.lname}}</label>
+	   </div>
+	   <div class="form-group">
+		   <label class="col-md-2 control-label">Birthdate: {{friend.birthday | date}}</label>
+		   
+	   </div>
+	   <div class="form-group">
+		   <label class="col-md-2 control-label">Created at {{friend.createdAt | date}}</label>
+		   <p></p>
+	   </div>
+	</div>
+</div>

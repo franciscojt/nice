@@ -1,0 +1,22 @@
+
+<div ng-controller = "TeamsController" class="row">
+	<h1>Teams</h1>
+	<form>
+		<label for="Name: ">Name: </label>
+		<input type="text" ng-model = "nTeam.name"/>
+		<button type="submit" value="add new food" ng-click="addTeam()">Add Teams</button>
+	</form>	
+	<table>
+		<thead>
+			<tr>
+				<th>Team Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="team in teams track by $index">
+				<td>{{team.name}}</td>
+				<td><button type="submit" value="add new food" ng-click="delTeam($index)">Remove Team</button></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
